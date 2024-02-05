@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./index.css";
+import Home from "./Home/Jsx";
+
 
 const App = () => (
   <div className="container">
-    <div>Name: flexhome</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+      <Home/>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
