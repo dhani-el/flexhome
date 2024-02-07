@@ -102,29 +102,57 @@ export function Pitch(){
 
 export function Pricing(){
     return <motion.div id="pricingDiv">
-                <motion.h2 id="pricingDivH2">Same Price as a Bottle of Coke.</motion.h2>
+                <motion.p id="pricingDivP">Same Price as a Bottle of Coke.</motion.p>
                 <motion.div id="pricingDivContentDiv">
-                    pricing Body design
+                    <CardOne/>
+                    <CardTwo/>
+                </motion.div>
+            </motion.div>
+}
+
+function CardOne(){
+    return  <motion.div id="CardOne">
+                <motion.p id="CardOneTopLeftP">Pricing</motion.p>
+                <motion.div id="CardOneContentDiv">
+                    <motion.span id="CardOneContentDivSpan">
+                        <motion.p id="CardOneContentDivSpanAmountP">₦500</motion.p>
+                        <motion.p id="CardOneContentDivSpanMoP">/mo</motion.p>
+                    </motion.span>
+                    <motion.p id="CardOneContentDivMainPContent">
+                        Unlock an untethered experience. Sync multiple bank accounts, set custom time periods for your budgets, get automatic account refreshes daily and more.
+                    </motion.p>
+                </motion.div>
+            </motion.div>
+}
+
+function CardTwo(){
+    return  <motion.div id="CardTwoDiv">
+                <motion.p id="CardTwoDivSignalP">Try a Free Account</motion.p>
+                <motion.p id="CardTwoDivContentP">You don't have to pay right away. Sign up, sync an account and take it for a spin,</motion.p>
+                <motion.div id="CardTwoDivImageDiv">
+                    <motion.img src={PhoneImage} id="CardTwoDivImageDivImg"/>
                 </motion.div>
             </motion.div>
 }
 
 export function Testimonials({testimonials}){
     return <motion.div id="testimonialsDiv">
-                {testimonials.map(function(testimonial){
-                    return <Atestimonial testimonial={testimonial}/>
-                })}
+                <motion.p id="testimonialsDivHeaderP">See What Our Users are Saying.</motion.p>
+                <motion.div id="testimonialsDivMainContentDiv">
+                    <motion.div id="testimonialsDivMainContentDivTopFader"></motion.div>
+                    <motion.div id="testimonialsDivMainContentDivBottomFader"></motion.div>
+                    <motion.div id="testimonialsDivMainContentDivTestimonialDiv">
+                        {testimonials.map(function(testimonial){
+                            return <Atestimonial testimonial={testimonial}/>
+                        })}
+                    </motion.div>
+                </motion.div>
             </motion.div>
 }
 
 function Atestimonial({testimonial}){
     return <motion.div id="atestimonialDiv">
-            </motion.div>
-}
-
-export function CallToActionSection(){
-    return <motion.div id="callToActionDiv">
-                call to action design section
+                <motion.img src={testimonial} id="atestimonialDivImg" />
             </motion.div>
 }
 

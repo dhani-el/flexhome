@@ -136,4 +136,142 @@ body{
             }
         }
     }
+    #pricingDiv{
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &P{
+            display: inline-block;
+            width: 80%;
+            padding: 0 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+        &ContentDiv{
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            #CardOne{
+                width: 100%;
+                height: 40vh;
+                background-color: black;
+                color: white;
+                border-radius: 1rem;
+                padding: 2rem 1rem;
+                &ContentDiv{
+                    margin-top: 3.5rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    &Span{
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        &AmountP{
+                            font-size: 2rem;
+                        }
+                        &MoP{
+                            font-size: 1.4rem;
+                        }
+                    }
+                    &MainPContent{
+                        text-align: center;
+                        display: inline-block;
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
+
+            #CardTwoDiv{
+                width: 100%;
+                height: 40vh;
+                overflow: hidden;
+                background-color: goldenrod;
+                border-radius: 1rem;
+                padding: 2.5rem 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                &SignalP{
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+                &ContentP{
+                    text-align: center;
+                }
+                &ImageDiv{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    height: 30vh;
+                    padding-top: 1.5rem;
+                    &Img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #testimonialsDiv{
+        width: 100%;
+        margin-top: 3rem;
+        &HeaderP{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        &MainContentDiv{
+            width: 100%;
+            height: 55vh;
+            background-color: whitesmoke;
+            position: relative;
+            &TopFader,&BottomFader{
+                position: absolute;                
+                width: 100%;
+                height: 3rem;
+            }
+            &TopFader{
+                top: 0;
+                background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8) , rgba(245,245,245,0) );
+            }
+            &BottomFader{
+                bottom: 0;
+                background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8) , rgba(245,245,245,0) );
+            }
+            &TestimonialDiv{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: scroll;
+                #atestimonialDiv{
+                    padding: 1rem;
+                    height: 80%;
+                    &Img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #footerContainer{
+        margin-top: 5rem;
+        width: 100%;
+        height:70vh;
+        background-color: black;
+        color: white;
+    }
 }

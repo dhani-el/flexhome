@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 
-import { NavBar, Content, ProofOne, Pitch, Testimonials, CallToActionSection, Footer } from "./component";
+import { NavBar, Content, ProofOne, Pitch, Pricing, Testimonials, Footer } from "./component";
 import "../Styles/index.css";
 import PhoneImage from "../../Assets/Images/hero.jpg"
 
@@ -13,8 +13,8 @@ export default function Home(){
                 <Content/>
                 <ProofOne bankLogos={[]}/>
                 <Pitch/>
-                <Testimonials testimonials={[]} />
-                <CallToActionSection/>
+                <Pricing/>
+                <Testimonials testimonials={[PhoneImage,PhoneImage,PhoneImage]} />
                 <Footer/>
             </motion.div>
 }
