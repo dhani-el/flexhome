@@ -22,7 +22,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow-y: scroll;
 }
 
@@ -87,18 +87,44 @@ body {
   display: none;
 }
 #HomeDiv #pitchDiv {
-  padding: 1rem 0;
-  width: 100%;
-  height: 65vh;
-  display: flex;
+  padding: 0 1rem;
 }
 #HomeDiv #pitchDivMainP {
   display: inline-block;
   width: 100%;
-  padding: 0 1rem;
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
+}
+#HomeDiv #pitchDivContentDiv {
+  width: 100%;
+  height: 65vh;
+  border-radius: 1.2rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#HomeDiv #pitchDivContentDivHeadingP {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+}
+#HomeDiv #pitchDivContentDivBodyP {
+  text-align: center;
+}
+#HomeDiv #pitchDivContentDivImageDiv {
+  height: 70%;
+  margin-top: 4rem;
+}
+#HomeDiv #pitchDivContentDivImageDivImg {
+  width: auto;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */

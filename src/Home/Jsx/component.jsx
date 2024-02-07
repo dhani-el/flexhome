@@ -87,7 +87,15 @@ export function Pitch(){
     return <motion.div id="pitchDiv">
                 <motion.p id="pitchDivMainP">Track your Spendings and Manage your Finances Well</motion.p>
                 <motion.div id="pitchDivContentDiv">
-                    pitch Design
+                    <motion.p id="pitchDivContentDivHeadingP">
+                        Sync and Monitor all your Bank Accounts.
+                    </motion.p>
+                    <motion.p id="pitchDivContentDivBodyP">
+                        Sync multiple bank accounts and leave the rest to Trakka. Automatic tracking and monitoring of your account funds with weekly updates. No thinking, no hassle.
+                    </motion.p>
+                    <motion.div id="pitchDivContentDivImageDiv">
+                        <motion.img src={PhoneImage} id="pitchDivContentDivImageDivImg"/>
+                    </motion.div>
                 </motion.div>
         </motion.div>
 }
