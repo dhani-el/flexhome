@@ -36,6 +36,12 @@ module.exports = (_, argv) => ({
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(bmp|gif|jpeg|png|jpg)$/,
+        use:{
+          loader: "url-loader"
+        }
+      }
     ],
   },
 
