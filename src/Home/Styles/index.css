@@ -14,8 +14,91 @@
   height: 0px;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+}
+
+#app, .container, #HomeDiv {
+  width: 100%;
+  height: 100%;
+}
+
+#HomeDiv #NavBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+#HomeDiv #NavBar #NavList {
+  display: none;
+}
+#HomeDiv #contentDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  margin-top: 4rem;
+}
+#HomeDiv #contentDiv #introtextDivHeadP {
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding-bottom: 3rem;
+}
+#HomeDiv #contentDiv #introtextDivHeadP #contentDivMainPTextSpan {
+  color: navy;
+}
+#HomeDiv #contentDiv #introImageDiv {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+}
+#HomeDiv #contentDiv #introImageDivImg {
+  width: auto;
+  height: 100%;
+}
+#HomeDiv #ProofOneDiv {
+  margin-top: 4rem;
+}
+#HomeDiv #ProofOneDivMainP {
+  display: inline-block;
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#HomeDiv #ProofOneDivSubDivBankLogos {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+#HomeDiv #ProofOneDivSubDiv #moreDiv {
+  display: none;
+}
+#HomeDiv #pitchDiv {
+  padding: 1rem 0;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+}
+#HomeDiv #pitchDivMainP {
+  display: inline-block;
+  width: 100%;
+  padding: 0 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */

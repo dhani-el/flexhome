@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 
+import PhoneImage from "../../Assets/Images/hero.jpg"
+
 export function NavBar(){
     return <motion.div id="NavBar" >
                 <LogoComp/>
                 <NavList/>
+                <HamBurgerMenu/>
             </motion.div>
 }
 
@@ -37,29 +40,35 @@ function MobileMenu(){
 
 export function Content(){
     return <motion.div id="contentDiv">
-
+                <IntroText/>
+                <IntroImage/>
     </motion.div>
 }
 
 function IntroText(){
     return <motion.div id="introtextDiv" >
-
+                <motion.p id="introtextDivHeadP">
+                    Personal Finance Has Never Being Simpler to <motion.span id="contentDivMainPTextSpan">Track</motion.span>
+                </motion.p>
+                <motion.p id="introtextDivBodyP">
+                        PiggyDash is the all you need personal finance tracking tool that helps you comprehensively track your finances, by tracking how you spend and provide you with the best budgeting and finance predicting algorithims to help you decide how to utilize your money.
+                </motion.p>
     </motion.div>
 }
 
 function IntroImage(){
     return <motion.div id="introImageDiv">
-
+            <motion.img src={PhoneImage} alt="device showcasing webapp" id="introImageDivImg" />
     </motion.div>
 }
 
 export function ProofOne({bankLogos}){
     return <motion.div id="ProofOneDiv">
-                <motion.h2>
+                <motion.p id="ProofOneDivMainP">
                     Integrated with Banks you Trust.
-                </motion.h2>
-                <motion.div>
-                    <motion.div id="bankLogos">
+                </motion.p>
+                <motion.div id="ProofOneDivSubDiv">
+                    <motion.div id="ProofOneDivSubDivBankLogos">
                         {bankLogos.map(function(logo){
                             return <motion.div id="singleLogoDiv">
                                         <motion.img src={logo} id="singleLogoDivImmg" />
@@ -76,7 +85,7 @@ export function ProofOne({bankLogos}){
 
 export function Pitch(){
     return <motion.div id="pitchDiv">
-                <motion.h2 id="pitchDivH2">Track your Spendings and Manage your Finances Well</motion.h2>
+                <motion.p id="pitchDivMainP">Track your Spendings and Manage your Finances Well</motion.p>
                 <motion.div id="pitchDivContentDiv">
                     pitch Design
                 </motion.div>
