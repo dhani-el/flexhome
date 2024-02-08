@@ -93,6 +93,14 @@ export function Pitch(){
                     <motion.p id="pitchDivContentDivBodyP">
                         Sync multiple bank accounts and leave the rest to Trakka. Automatic tracking and monitoring of your account funds with weekly updates. No thinking, no hassle.
                     </motion.p>
+                    <motion.div id="landscapeTextContainer">
+                    <motion.p id="landscapeTextContainerHeadingP">
+                        Sync and Monitor all your Bank Accounts.
+                    </motion.p>
+                    <motion.p id="landscapeTextContainerBodyP">
+                        Sync multiple bank accounts and leave the rest to Trakka. Automatic tracking and monitoring of your account funds with weekly updates. No thinking, no hassle.
+                    </motion.p>
+                    </motion.div>
                     <motion.div id="pitchDivContentDivImageDiv">
                         <motion.img src={PhoneImage} id="pitchDivContentDivImageDivImg"/>
                     </motion.div>
@@ -127,8 +135,10 @@ function CardOne(){
 
 function CardTwo(){
     return  <motion.div id="CardTwoDiv">
-                <motion.p id="CardTwoDivSignalP">Try a Free Account</motion.p>
-                <motion.p id="CardTwoDivContentP">You don't have to pay right away. Sign up, sync an account and take it for a spin,</motion.p>
+                <motion.div id="textsContainer">
+                    <motion.p id="CardTwoDivSignalP">Try a Free Account</motion.p>
+                    <motion.p id="CardTwoDivContentP">You don't have to pay right away. Sign up, sync an account and take it for a spin,</motion.p>
+                </motion.div>
                 <motion.div id="CardTwoDivImageDiv">
                     <motion.img src={PhoneImage} id="CardTwoDivImageDivImg"/>
                 </motion.div>

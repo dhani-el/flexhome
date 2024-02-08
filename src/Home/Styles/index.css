@@ -82,7 +82,7 @@ body {
 }
 #HomeDiv #contentDiv #introImageDiv {
   width: 100%;
-  height: 45vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
 }
@@ -92,6 +92,8 @@ body {
 }
 #HomeDiv #ProofOneDiv {
   margin-top: 4rem;
+  width: 100%;
+  height: 20vh;
 }
 #HomeDiv #ProofOneDivMainP {
   display: inline-block;
@@ -156,6 +158,9 @@ body {
 #HomeDiv #pitchDivContentDivImageDivImg {
   width: auto;
   height: 100%;
+}
+#HomeDiv #pitchDivContentDiv #landscapeTextContainer {
+  display: none;
 }
 #HomeDiv #pricingDiv {
   margin-top: 3rem;
@@ -228,6 +233,7 @@ body {
   flex-direction: column;
   gap: 1.2rem;
   font-family: montserrat;
+  overflow: hidden;
 }
 #HomeDiv #pricingDivContentDiv #CardTwoDivSignalP {
   font-weight: 700;
@@ -302,4 +308,111 @@ body {
   background-color: black;
   color: white;
   font-family: montserrat;
+}
+
+@media (orientation: landscape) and (min-height: 500px) {
+  #HomeDiv #NavBar #NavList {
+    width: 35%;
+    padding-right: 2rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    font-family: bebas;
+  }
+  #HomeDiv #NavBar #hamburgerMenuDiv {
+    display: none;
+  }
+  #HomeDiv #contentDiv {
+    flex-direction: row;
+  }
+  #HomeDiv #contentDiv #introtextDiv {
+    width: 50%;
+  }
+  #HomeDiv #contentDiv #introtextDivHeadP {
+    padding-bottom: 1rem;
+  }
+  #HomeDiv #contentDiv #introtextDivBodyP {
+    display: inline-block;
+    width: 80%;
+    text-align: justify;
+  }
+  #HomeDiv #contentDiv #introImageDiv {
+    width: 50%;
+  }
+  #HomeDiv #ProofOneDiv {
+    height: 40vh;
+  }
+  #HomeDiv #pitchDiv {
+    padding: 0 5rem;
+  }
+  #HomeDiv #pitchDivMainP {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  #HomeDiv #pitchDivContentDiv {
+    height: 80vh;
+    flex-direction: row;
+  }
+  #HomeDiv #pitchDivContentDivHeadingP, #HomeDiv #pitchDivContentDivBodyP {
+    display: none;
+  }
+  #HomeDiv #pitchDivContentDiv #landscapeTextContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  #HomeDiv #pitchDivContentDiv #landscapeTextContainerHeadingP, #HomeDiv #pitchDivContentDiv #landscapeTextContainerBodyP {
+    display: inline-block;
+  }
+  #HomeDiv #pitchDivContentDiv #landscapeTextContainerHeadingP {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: bebas;
+    text-align: center;
+    padding: 1rem;
+  }
+  #HomeDiv #pitchDivContentDiv #landscapeTextContainerBodyP {
+    text-align: center;
+    font-family: montserrat;
+    display: inline-block;
+    padding: 0 1.8rem;
+  }
+  #HomeDiv #pitchDivContentDivImageDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #HomeDiv #pricingDivContentDiv {
+    flex-direction: row;
+  }
+  #HomeDiv #pricingDivContentDiv #CardOne {
+    height: 45vh;
+  }
+  #HomeDiv #pricingDivContentDiv #CardOneContentDiv {
+    margin-top: 1rem;
+  }
+  #HomeDiv #pricingDivContentDiv #CardTwoDiv {
+    flex-direction: row;
+    height: 45vh;
+  }
+  #HomeDiv #pricingDivContentDiv #CardTwoDiv #textsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #HomeDiv #pricingDivContentDiv #CardTwoDiv #textsContainer #CardTwoDivSignalP {
+    font-size: 1rem;
+  }
+  #HomeDiv #pricingDivContentDiv #CardTwoDivImageDiv {
+    width: 50%;
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
