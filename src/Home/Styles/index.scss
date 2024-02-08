@@ -404,14 +404,22 @@ body{
         #pricingDiv{
            &ContentDiv{
                 flex-direction: row;
+                #CardOne{
+                    height: 45vh;
+                    &ContentDiv{
+                        margin-top: 1rem;
+                    }
+                }
                 #CardTwoDiv{
                     flex-direction: row;
+                    height: 45vh;
                     #textsContainer{
                         display: flex;
                         flex-direction: column;
                         width: 50%;
                         align-items: center;
                         justify-content: center;
+                        gap: 1rem;
                         #CardTwoDivSignalP{
                             font-size: 1rem;
                         }

@@ -390,8 +390,15 @@ body {
   #HomeDiv #pricingDivContentDiv {
     flex-direction: row;
   }
+  #HomeDiv #pricingDivContentDiv #CardOne {
+    height: 45vh;
+  }
+  #HomeDiv #pricingDivContentDiv #CardOneContentDiv {
+    margin-top: 1rem;
+  }
   #HomeDiv #pricingDivContentDiv #CardTwoDiv {
     flex-direction: row;
+    height: 45vh;
   }
   #HomeDiv #pricingDivContentDiv #CardTwoDiv #textsContainer {
     display: flex;
@@ -399,6 +406,7 @@ body {
     width: 50%;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
   }
   #HomeDiv #pricingDivContentDiv #CardTwoDiv #textsContainer #CardTwoDivSignalP {
     font-size: 1rem;
