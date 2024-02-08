@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "bebas";
+  src: url("../../Assets/fonts/bebas.ttf");
+}
+@font-face {
+  font-family: "inter";
+  src: url("../../Assets/fonts/inter.ttf");
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../../Assets/fonts/montserrat.ttf");
+}
 * {
   scrollbar-width: 0px;
 }
@@ -37,6 +49,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  background-color: black;
+  color: white;
 }
 #HomeDiv #NavBar #NavList {
   display: none;
@@ -47,15 +61,24 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 0 2rem;
-  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: black;
+  color: white;
+  border: 2px black solid;
 }
 #HomeDiv #contentDiv #introtextDivHeadP {
   font-size: 2.4rem;
   font-weight: 800;
-  padding-bottom: 3rem;
+  font-family: bebas;
+  padding-bottom: 2rem;
 }
 #HomeDiv #contentDiv #introtextDivHeadP #contentDivMainPTextSpan {
-  color: navy;
+  color: goldenrod;
+  text-align: justify;
+}
+#HomeDiv #contentDiv #introtextDivBodyP {
+  font-family: montserrat;
 }
 #HomeDiv #contentDiv #introImageDiv {
   width: 100%;
@@ -77,6 +100,7 @@ body {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
+  font-family: bebas;
 }
 #HomeDiv #ProofOneDivSubDivBankLogos {
   display: flex;
@@ -95,8 +119,9 @@ body {
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  font-family: bebas;
 }
 #HomeDiv #pitchDivContentDiv {
   width: 100%;
@@ -114,11 +139,15 @@ body {
   width: 80%;
   font-size: 1.5rem;
   font-weight: 900;
+  font-family: bebas;
   text-align: center;
   padding: 1rem;
 }
 #HomeDiv #pitchDivContentDivBodyP {
   text-align: center;
+  font-family: montserrat;
+  display: inline-block;
+  padding: 0 1.8rem;
 }
 #HomeDiv #pitchDivContentDivImageDiv {
   height: 70%;
@@ -142,6 +171,7 @@ body {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 800;
+  font-family: bebas;
   margin-bottom: 2rem;
 }
 #HomeDiv #pricingDivContentDiv {
@@ -158,6 +188,10 @@ body {
   color: white;
   border-radius: 1rem;
   padding: 2rem 1rem;
+  font-family: montserrat;
+}
+#HomeDiv #pricingDivContentDiv #CardOneTopLeftP {
+  font-weight: 700;
 }
 #HomeDiv #pricingDivContentDiv #CardOneContentDiv {
   margin-top: 3.5rem;
@@ -173,6 +207,7 @@ body {
 }
 #HomeDiv #pricingDivContentDiv #CardOneContentDivSpanAmountP {
   font-size: 2rem;
+  font-weight: 700;
 }
 #HomeDiv #pricingDivContentDiv #CardOneContentDivSpanMoP {
   font-size: 1.4rem;
@@ -192,6 +227,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  font-family: montserrat;
 }
 #HomeDiv #pricingDivContentDiv #CardTwoDivSignalP {
   font-weight: 700;
@@ -204,7 +240,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 30vh;
+  height: 40vh;
   padding-top: 1.5rem;
 }
 #HomeDiv #pricingDivContentDiv #CardTwoDivImageDivImg {
@@ -221,6 +257,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
+  font-family: bebas;
   margin-bottom: 1rem;
 }
 #HomeDiv #testimonialsDivMainContentDiv {
@@ -264,4 +301,5 @@ body {
   height: 70vh;
   background-color: black;
   color: white;
+  font-family: montserrat;
 }/*# sourceMappingURL=index.css.map */
