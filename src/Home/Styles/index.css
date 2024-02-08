@@ -49,6 +49,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  background-color: black;
+  color: white;
 }
 #HomeDiv #NavBar #NavList {
   display: none;
@@ -59,7 +61,11 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 0 2rem;
-  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: black;
+  color: white;
+  border: 2px black solid;
 }
 #HomeDiv #contentDiv #introtextDivHeadP {
   font-size: 2.4rem;
@@ -68,7 +74,7 @@ body {
   padding-bottom: 2rem;
 }
 #HomeDiv #contentDiv #introtextDivHeadP #contentDivMainPTextSpan {
-  color: navy;
+  color: goldenrod;
   text-align: justify;
 }
 #HomeDiv #contentDiv #introtextDivBodyP {
