@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 
 import PhoneImage from "../../Assets/Images/hero.jpg"
+import smallLogo from "../../Assets/Images/1x/Logo.png"
+import mediumLogo from "../../Assets/Images/2x/Logo.png"
+import largeLogo from "../../Assets/Images/3x/Logo.png"
+import XlargeLogo from "../../Assets/Images/4x/Logo.png"
 
 export function NavBar(){
     return <motion.div id="NavBar" >
@@ -12,9 +16,13 @@ export function NavBar(){
 
 function LogoComp(){
     return <motion.div id="LogoComp" >
-                {/* <motion.picture>
-                </motion.picture> */}
-                <p>DUMMY LOGO</p>
+                <motion.picture id="LogoCompPicture" >
+                    <motion.source  srcSet={XlargeLogo} media="(min-width: 1500px)" />
+                    <motion.source  srcSet={largeLogo} media="(min-width: 950px)" />
+                    <motion.source  srcSet={mediumLogo} media="(min-width: 650px)" />
+                    <motion.source  srcSet={smallLogo} media="(min-width: 250px)" />
+                    <motion.img src={mediumLogo} />
+                </motion.picture>
             </motion.div>
 }
 

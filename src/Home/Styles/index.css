@@ -55,6 +55,16 @@ body {
 #HomeDiv #NavBar #NavList {
   display: none;
 }
+#HomeDiv #NavBar #LogoComp {
+  height: 5vh;
+}
+#HomeDiv #NavBar #LogoCompPicture {
+  height: 100%;
+}
+#HomeDiv #NavBar #LogoCompPicture img {
+  height: 100%;
+  width: auto;
+}
 #HomeDiv #contentDiv {
   width: 100%;
   display: flex;
@@ -322,6 +332,9 @@ body {
   }
   #HomeDiv #NavBar #hamburgerMenuDiv {
     display: none;
+  }
+  #HomeDiv #NavBar #LogoComp {
+    height: 10vh;
   }
   #HomeDiv #contentDiv {
     flex-direction: row;
