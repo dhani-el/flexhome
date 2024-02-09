@@ -65,6 +65,29 @@ body {
   height: 100%;
   width: auto;
 }
+#HomeDiv #NavBar #hamburgerMenuDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.5rem;
+}
+#HomeDiv #NavBar #hamburgerMenuDivSpan1, #HomeDiv #NavBar #hamburgerMenuDivSpan2, #HomeDiv #NavBar #hamburgerMenuDivSpan3 {
+  display: block;
+  background-color: whitesmoke;
+}
+#HomeDiv #NavBar #hamburgerMenuDivSpan1 {
+  width: 100%;
+  height: 25%;
+}
+#HomeDiv #NavBar #hamburgerMenuDivSpan2 {
+  width: 70%;
+  height: 25%;
+}
+#HomeDiv #NavBar #hamburgerMenuDivSpan3 {
+  width: 85%;
+  height: 25%;
+}
 #HomeDiv #contentDiv {
   width: 100%;
   display: flex;

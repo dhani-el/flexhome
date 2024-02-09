@@ -35,7 +35,9 @@ function NavList(){
 
 function HamBurgerMenu(){
     return <motion.div id="hamburgerMenuDiv">
-                <p>Menu</p>
+                <motion.span id="hamburgerMenuDivSpan1"></motion.span>
+                <motion.span id="hamburgerMenuDivSpan2"></motion.span>
+                <motion.span id="hamburgerMenuDivSpan3"></motion.span>
             </motion.div>
 }
 
