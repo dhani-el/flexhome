@@ -3,10 +3,6 @@
   src: url("../../Assets/fonts/bebas.ttf");
 }
 @font-face {
-  font-family: "inter";
-  src: url("../../Assets/fonts/inter.ttf");
-}
-@font-face {
   font-family: "montserrat";
   src: url("../../Assets/fonts/montserrat.ttf");
 }
@@ -87,6 +83,35 @@ body {
 #HomeDiv #NavBar #hamburgerMenuDivSpan3 {
   width: 85%;
   height: 25%;
+}
+#HomeDiv #NavBar #mobileMenuDiv {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.819);
+  position: absolute;
+  top: 0;
+  left: 110%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  color: goldenrod;
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+#HomeDiv #NavBar #mobileMenuDivPClose {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 0.8rem;
+}
+#HomeDiv #NavBar #mobileMenuDivPAbout, #HomeDiv #NavBar #mobileMenuDivPLogin {
+  text-decoration: line-through;
+}
+#HomeDiv #NavBar #mobileMenuDiv.show {
+  left: 0%;
 }
 #HomeDiv #contentDiv {
   width: 100%;
@@ -387,6 +412,10 @@ body {
   font-size: 0.8rem;
 }
 
+#HomeDiv.noScroll {
+  overflow: hidden;
+}
+
 @media (orientation: landscape) and (min-height: 500px) {
   #HomeDiv #NavBar #NavList {
     width: 35%;
@@ -402,6 +431,9 @@ body {
   }
   #HomeDiv #NavBar #LogoComp {
     height: 10vh;
+  }
+  #HomeDiv #NavBar #mobileMenuDiv {
+    display: none;
   }
   #HomeDiv #contentDiv {
     flex-direction: row;
