@@ -16,9 +16,12 @@ export function NavBar(){
 
 function LogoComp(){
     return <motion.div id="LogoComp" >
-                <motion.picture>
-                    <motion.source   />
-                    <motion.img  />
+                <motion.picture id="LogoCompPicture" >
+                    <motion.source  srcSet={XlargeLogo} media="(min-width: 1500px)" />
+                    <motion.source  srcSet={largeLogo} media="(min-width: 950px)" />
+                    <motion.source  srcSet={mediumLogo} media="(min-width: 650px)" />
+                    <motion.source  srcSet={smallLogo} media="(min-width: 250px)" />
+                    <motion.img src={mediumLogo} />
                 </motion.picture>
             </motion.div>
 }

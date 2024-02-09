@@ -59,6 +59,17 @@ body{
         #NavList{
             display: none;
         }
+        #LogoComp{
+            height: 5vh;
+            &Picture{
+                height: 100%;
+                img{
+                // display: inline-block;
+                height: 100%;
+                width: auto;
+                }
+            }
+        }
     }
     #contentDiv{
         width: 100%;
@@ -335,6 +346,9 @@ body{
             }
             #hamburgerMenuDiv{
                 display: none;
+            }
+            #LogoComp{
+                height: 10vh;
             }
         }
         #contentDiv{
