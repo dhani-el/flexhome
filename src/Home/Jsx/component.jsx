@@ -178,6 +178,33 @@ function Atestimonial({testimonial}){
 
 export function Footer(){
     return <motion.div id="footerContainer">
-                footer design
+            <motion.div id="half">
+                <LogoComp/>
+                <motion.div id="boilerPlate">
+                    <motion.p>support@piggydash.com</motion.p>
+                    <motion.p> © 2024. Coderosion Technologies</motion.p>
+                </motion.div>
+
+                <motion.div id="socials">
+                    <motion.span>Twitter</motion.span>
+                    <motion.span>Instagram</motion.span>
+                </motion.div>
             </motion.div>
+
+                <FooterSection header={"Company"} subs={["About Us", "Features", "Pricing", "Blog"]} />
+                <FooterSection header={"Legal"} subs={["Terms of Service", "Privacy Policy"]} />
+            </motion.div>
+}
+
+function FooterSection({header,subs = []}){
+    return <motion.div id="AFooterSection">
+                <motion.p id="heading">{header}</motion.p>
+                <motion.div id="list">
+                    {
+                        subs.map(function(sub){
+                            return <motion.p id="aList">{sub}</motion.p>
+                        })
+                    }
+                </motion.div>
+    </motion.div>
 }
