@@ -11,12 +11,21 @@ export default function Home(){
 
     const [isMenuOpen,setMenuIsOpen] = useState(false);
     const bodyRef = useRef(document.body);
+    const appRef = useRef(document.getElementById("app"));
+    const containerRef = useRef(document.getElementById("container"));
 
-    function toggleScrollability(MenuisOpen = false ){
-        bodyRef.current.style.overflow = MenuisOpen ? "hidden" : "scroll";
+    function toggleScrollability(MenuisOpen = false){
+        bodyRef.current.style.overflowY = MenuisOpen ? "hidden" : "scroll";
+        appRef.current.style.overflow = MenuisOpen ? "hidden" : "scroll";
+        // if (condition) {
+            
+        // }
+        // containerRef.current?.style.overflowY = MenuisOpen ? "hidden" : "scroll";
+
         setMenuIsOpen(function(init){
             return  !init
         });
+
     }
 
     return <motion.div id="HomeDiv" className={isMenuOpen ? "noScroll":""}>
@@ -27,5 +36,5 @@ export default function Home(){
                 <Pricing/>
                 <Testimonials testimonials={[PhoneImage,PhoneImage,PhoneImage]} />
                 <Footer/>
-            </motion.div>
+           </motion.div>
 }

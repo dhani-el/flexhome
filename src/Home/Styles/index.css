@@ -26,12 +26,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   width: 100vw;
   height: 100%;
   overflow-y: scroll;
+  position: relative;
 }
 
 #app, .container, #HomeDiv {
@@ -112,6 +114,7 @@ body {
 }
 #HomeDiv #NavBar #mobileMenuDiv.show {
   left: 0%;
+  z-index: 10;
 }
 #HomeDiv #contentDiv {
   width: 100%;

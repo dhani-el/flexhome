@@ -30,12 +30,14 @@ $default-padding:1rem;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
     width: 100vw;
     height: 100%;
     overflow-y: scroll;
+    position: relative;
 }
 
 #app,.container,#HomeDiv{
@@ -117,6 +119,7 @@ body{
         }
         #mobileMenuDiv.show{
             left: 0%;
+            z-index: 10;
         }
     }
     #contentDiv{
