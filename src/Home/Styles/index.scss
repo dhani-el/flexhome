@@ -6,10 +6,6 @@ $default-padding:1rem;
     src: url("../../Assets/fonts/bebas.ttf");
 }
 @font-face {
-    font-family: "inter";
-    src: url("../../Assets/fonts/inter.ttf");
-}
-@font-face {
     font-family: "montserrat";
     src: url("../../Assets/fonts/montserrat.ttf");
 }
@@ -34,18 +30,21 @@ $default-padding:1rem;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
     width: 100vw;
     height: 100%;
     overflow-y: scroll;
+    position: relative;
 }
 
 #app,.container,#HomeDiv{
     width: 100%;
     height: 100%;
 }
+
 
 #HomeDiv{
     #NavBar{
@@ -91,6 +90,36 @@ body{
                 width: 85%;
                 height: 25%;
             }
+        }
+        #mobileMenuDiv{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.819);
+            position: absolute;
+            top: 0;
+            left: 110%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+            color: goldenrod;
+            font-family: montserrat;
+            font-weight: 700;
+            font-size: 1.5rem;
+            &PClose{
+                position: absolute;
+                top: 3rem;
+                right: 3rem;
+                font-size: 0.8rem;
+            }
+            &PAbout , &PLogin{
+                text-decoration: line-through;
+            }
+        }
+        #mobileMenuDiv.show{
+            left: 0%;
+            z-index: 10;
         }
     }
     #contentDiv{
@@ -400,6 +429,10 @@ body{
     }
 }
 
+#HomeDiv.noScroll{
+    overflow: hidden;
+}
+
 @media (orientation:"landscape") and (min-height :"500px") {
     #HomeDiv{
         #NavBar{
@@ -417,6 +450,9 @@ body{
             }
             #LogoComp{
                 height: 10vh;
+            }
+            #mobileMenuDiv{
+                display: none;
             }
         }
         #contentDiv{
@@ -527,3 +563,4 @@ body{
         }
     }
 }
+

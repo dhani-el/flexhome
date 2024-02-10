@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import PhoneImage from "../../Assets/Images/hero.jpg"
@@ -6,11 +7,26 @@ import mediumLogo from "../../Assets/Images/2x/Logo.png"
 import largeLogo from "../../Assets/Images/3x/Logo.png"
 import XlargeLogo from "../../Assets/Images/4x/Logo.png"
 
-export function NavBar(){
+export function NavBar({scrollToggleFunc}){
+    const [showMenuBar, setShowMenuBar] = useState(false);
+
+    function toggleMenu(){
+        scrollToggleFunc(true);
+        setShowMenuBar(function(init){
+            return !init
+        })
+    }
+    function closeToggleMenu(){
+        scrollToggleFunc();
+        setShowMenuBar(function(init){
+            return !init
+        })
+    }
     return <motion.div id="NavBar" >
                 <LogoComp/>
                 <NavList/>
-                <HamBurgerMenu/>
+                <HamBurgerMenu handleClick={toggleMenu}/>
+                <MobileMenu shouldShow={showMenuBar} closeFunc={closeToggleMenu} />
             </motion.div>
 }
 
@@ -33,18 +49,19 @@ function NavList(){
             </motion.div>
 }
 
-function HamBurgerMenu(){
-    return <motion.div id="hamburgerMenuDiv">
+function HamBurgerMenu({handleClick}){
+    return <motion.div id="hamburgerMenuDiv" onClick={handleClick}>
                 <motion.span id="hamburgerMenuDivSpan1"></motion.span>
                 <motion.span id="hamburgerMenuDivSpan2"></motion.span>
                 <motion.span id="hamburgerMenuDivSpan3"></motion.span>
             </motion.div>
 }
 
-function MobileMenu(){
-    return <motion.div id = "mobileMenuDiv">
-                <motion.p id="mobileMenuDivPAbout" >About</motion.p>
-                <motion.p id="mobileMenuDivPLogin" >Login</motion.p>
+function MobileMenu({shouldShow, closeFunc}){
+    return <motion.div id = "mobileMenuDiv" className={shouldShow ? "show" : ""}>
+                <motion.p id="mobileMenuDivPClose" onClick={closeFunc} >CLOSE</motion.p>
+                <motion.p id="mobileMenuDivPAbout" >ABOUT</motion.p>
+                <motion.p id="mobileMenuDivPLogin" >LOGIN</motion.p>
             </motion.div>
 }
 
