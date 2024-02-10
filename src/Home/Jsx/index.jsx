@@ -17,10 +17,6 @@ export default function Home(){
     function toggleScrollability(MenuisOpen = false){
         bodyRef.current.style.overflowY = MenuisOpen ? "hidden" : "scroll";
         appRef.current.style.overflow = MenuisOpen ? "hidden" : "scroll";
-        // if (condition) {
-            
-        // }
-        // containerRef.current?.style.overflowY = MenuisOpen ? "hidden" : "scroll";
 
         setMenuIsOpen(function(init){
             return  !init
